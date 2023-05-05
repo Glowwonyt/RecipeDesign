@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+    <title>Kwoowk The recipe website</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/yackien-swash" rel="stylesheet">
+                
+    <style>
+        .bg::before{
+            content: '';
+            display:inline-block;
+            height: 40vh;
+            width: 40vh;
+            bottom: 60%;
+            left: 10%;
+            background-color: #fff;
+            border-radius:999px;
+            position: absolute;
+            filter :blur(400px);
+        }
+        .work-serif {
+            font-family: 'Work Sans', sans-serif;
+        }
+        
+        .glassy {
+            background-color: #515767;
+            backdrop-filter: blur( 3px );
+            -webkit-backdrop-filter: blur( 3px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+
+        @font-face {
+            font-family: bahnschrift;
+            src: url("C:\Users\My PC\Downloads\Bahnschrift-Font-Family\BAHNSCHRIFT 9.TTF");
+        }
+
+        .banned {
+                font-family: bahnschrift;       
+        }
+        @font-face {
+            font-family: Freighttext;
+            src: url("D:\FreightTextReg\Freight Text Book\Freight Text Book.otf");
+        }
+        .freightcar{
+            font-family: Freighttext;
+        }
+        .fa-starl {
+            color: #ffa700;
+        }
+        .gr {
+            color: gainsboro;
+        }
+        /* width */
+        ::-webkit-scrollbar {
+        width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #ffa700; 
+        border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #ffa700; 
+        }
+        .only1{
+            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+            from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white">
+    <div class="w-[100vw] h-[100vh] flex items-center justify-center">
+        <div class="w-[70vw] h-[80vh] bg-slate-900 rounded-[50px] ">
+            <div class="rounded-t-l-[50px] rounded-l-[50px] w-[50vw] h-[80vh] p-[30px] flex flex-col">
+                <div class="h-[8vh] flex justify-evenly items-center nav">
+                    <div class="work-serif ml-[-4rem]">
+                        <button class="mr-[2rem]"><i class="fa-solid fa-bars-staggered scale-[2]"></i></button>
+                        Recipes.
+                    </div>
+                    <input type="text" class="glassy w-[20vw] h-[5vh] pl-[25px] banned" placeholder="Search recipes">
+                </div>
+                <div>
+                    <p class="text-[10px] indent-[3.3rem] tracking-[5px] mt-[3rem] text-[#ff770f] font-bold">MAIN COURSE</p><BR>
+                    <div class="indent-[3.3rem] text-5xl freightcar font-semibold tracking-wide">Fillet   Steak   with <br><p>roasted   vegetables</p></div>
+                    <div class="ml-[2.3rem] mt-[2.5rem] indent-[1.3rem] flex items-center">
+                        <i class="fa-solid fa-star fa-starl"></i><i class="fa-solid fa-star fa-starl"></i><i class="fa-solid fa-star fa-starl"></i><i class="fa-solid fa-star fa-starl"></i><i class="fa-solid fa-star gr pr-[3rem]"></i><p class="text-[12 px] text-gray-400 banned">4 out of 5</p>
+                    </div>
+                    <p class="text-3xl freightcar mt-[1.5rem] indent-[3.3rem]">Method</p>
+                    <div class="h-[36vh] ml-[3.3rem] hover:overflow-y-scroll overflow-x-hidden mt-[1.5rem] only1 pb-[5rem]">
+                        <p class='ml-[5rem] tracking-[1.2px] text-gray-300 w-[43vw]'>
+                            <ol>
+                                <li>Preheat your oven to 400°F (200°C).</li>
+                                <br>
+                                <li>Season the fillet steaks with salt and black pepper.</li>
+                                <br>
+                                <li>Heat 1 tablespoon of olive oil in a large skillet over medium-high heat.<br></li>
+                                <br>
+                                <li>Add the fillet steaks to the skillet and sear them on each side until they are browned, about 3-4 minutes per side.</li>
+                                <br>
+                                <li>Transfer the skillet to the oven and bake for 8-10 minutes for medium-rare, or until they are cooked to your liking.</li>
+                                <br>
+                                <li>While the steaks are cooking, heat the remaining tablespoon of olive oil in a separate skillet over medium heat.</li>
+                                <br>
+                                <li>Add the garlic, thyme, bell peppers, zucchini, and red onion to the skillet and cook for 5-7 minutes, or until the vegetables are tender.</li>
+                                <br>
+                                <li>Drizzle the balsamic vinegar over the vegetables and stir to combine.</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-blue-400">
+                  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
